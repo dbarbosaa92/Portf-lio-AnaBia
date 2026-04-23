@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Beatriz – Medicina Veterinária</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav>
+    <div class="nav-logo">
+      <!-- Ícone de pata — pode trocar por uma imagem/logo -->
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" fill="var(--color-accent)" />
+        <ellipse cx="15" cy="17" rx="4" ry="5.5" fill="var(--color-primary)" />
+        <ellipse cx="33" cy="17" rx="4" ry="5.5" fill="var(--color-primary)" />
+        <ellipse cx="9"  cy="27" rx="3.5" ry="5" fill="var(--color-primary)" />
+        <ellipse cx="39" cy="27" rx="3.5" ry="5" fill="var(--color-primary)" />
+        <ellipse cx="24" cy="30" rx="9" ry="8" fill="var(--color-primary)" />
+      </svg>
+      Ana Beatriz &nbsp;<span style="color:var(--color-secondary);font-size:.8rem;font-weight:400">· Veterinária</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#curriculo">Currículo</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#areas">Áreas</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span></span> Disponível para Estágio</div>
+      <h1 class="hero-title">Olá, eu sou<br><em>Ana Beatriz</em></h1>
+      <p class="hero-sub">
+        Estudante de Medicina Veterinária · 9º Período<br>
+        Apaixonada por cuidar e curar animais 🐾
+      </p>
+      <div class="hero-btns">
+        <a href="#curriculo" class="btn btn-white">Ver Currículo</a>
+        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+      </div>
+    </div>
+
+    <!-- Foto hero — troque o src pela sua foto -->
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        <svg viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="20" r="12" opacity=".6"/>
+          <path d="M8 56c0-13.255 10.745-24 24-24s24 10.745 24 24H8z" opacity=".6"/>
+        </svg>
+        <span>Sua foto aqui</span>
+        <small>Substitua pela tag &lt;img&gt;</small>
+      </div>
+      <!-- EXEMPLO: <img src="foto.jpg" alt="Ana Beatriz" /> -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MIM
+  ============================================================ -->
+  <section id="sobre">
+    <div class="section-label">Sobre Mim</div>
+    <h2 class="section-title">Quem sou eu?</h2>
+    <div class="sobre-grid">
+      <div class="sobre-photo reveal">
+        <div class="sobre-photo-frame">
+          <div class="sobre-photo-placeholder">
+            <!-- Troque pelo <img src="sobre.jpg" alt="Ana Beatriz" /> -->
+            <svg viewBox="0 0 64 64" fill="var(--color-muted)" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="13"/>
+              <path d="M6 58c0-14.359 11.641-26 26-26s26 11.641 26 26H6z"/>
+            </svg>
+            <span>Foto Aqui</span>
+          </div>
+        </div>
+        <div class="sobre-badge">
+          <strong>9º</strong>
+          <span>Período</span>
+        </div>
+      </div>
+
+      <div class="sobre-text reveal">
+        <!-- ---- EDITE ESTE TEXTO ---- -->
+        <p>
+          Sou <strong>Ana Beatriz</strong>, estudante do 9º período de Medicina Veterinária. Desde
+          criança tenho uma conexão especial com os animais, e essa paixão me guiou até a carreira
+          que sempre sonhei.
+        </p>
+        <p>
+          Ao longo da graduação, participei de estágios em clínicas de pequenos animais,
+          cirurgias e atendimentos de animais silvestres, acumulando experiência prática e
+          técnica nas principais áreas da medicina veterinária.
+        </p>
+        <p>
+          Tenho especial interesse em <strong>clínica cirúrgica</strong> e no atendimento de
+          pequenos animais, buscando sempre unir ciência, empatia e cuidado.
+        </p>
+
+        <!-- ---- HABILIDADES — adicione ou remova tags ---- -->
+        <div class="skills-list">
+          <span class="skill-tag">Pequenos Animais</span>
+          <span class="skill-tag">Clínica Médica</span>
+          <span class="skill-tag">Cirurgia</span>
+          <span class="skill-tag">Diagnóstico por Imagem</span>
+          <span class="skill-tag">Animais Silvestres</span>
+          <span class="skill-tag">Anestesiologia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CURRÍCULO
+  ============================================================ -->
+  <section id="curriculo">
+    <div class="section-label">Currículo</div>
+    <h2 class="section-title">Experiência & Formação</h2>
+    <div class="cv-cols">
+
+      <!-- Experiências -->
+      <div class="reveal">
+        <h3>🏥 Experiências</h3>
+        <div class="timeline">
+          <!-- ---- Adicione ou edite os itens abaixo ---- -->
+          <div class="timeline-item">
+            <div class="timeline-date">Jan 2024 – Presente</div>
+            <div class="timeline-title">Estágio Curricular — Clínica Cirúrgica</div>
+            <div class="timeline-org">Hospital Veterinário UFMG</div>
+            <div class="timeline-desc">Acompanhamento de cirurgias de tecidos moles e ortopédicas em pequenos animais.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Jun 2023 – Dez 2023</div>
+            <div class="timeline-title">Estágio Extracurricular — Clínica Médica</div>
+            <div class="timeline-org">VetVida Clínica Veterinária</div>
+            <div class="timeline-desc">Atendimento clínico de cães e gatos, triagem, exames e consultas supervisionadas.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Jan 2023 – Jun 2023</div>
+            <div class="timeline-title">Voluntária — Animais Silvestres</div>
+            <div class="timeline-org">CETAS Vitória</div>
+            <div class="timeline-desc">Reabilitação e triagem de animais silvestres resgatados.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-title">Monitor de Anatomia Veterinária</div>
+            <div class="timeline-org">Universidade Federal</div>
+            <div class="timeline-desc">Apoio didático a alunos do 1º e 2º período nas aulas práticas de anatomia.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formação e Habilidades -->
+      <div class="reveal">
+        <h3>🎓 Formação</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020 – 2025 (previsto)</div>
+            <div class="timeline-title">Bacharelado em Medicina Veterinária</div>
+            <div class="timeline-org">Universidade Federal — Vitória, ES</div>
+            <div class="timeline-desc">9º período. Ênfase em clínica e cirurgia de pequenos animais.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">Curso de Ultrassonografia Básica</div>
+            <div class="timeline-org">Instituto VetSkill</div>
+            <div class="timeline-desc">80h — Diagnóstico por imagem abdominal e de partes moles.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-title">Curso de Anestesiologia Veterinária</div>
+            <div class="timeline-org">CFMVet Online</div>
+            <div class="timeline-desc">40h — Protocolos anestésicos em cães e gatos.</div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:40px">💪 Nível de Habilidades</h3>
+        <!-- ---- Edite os valores de data-pct (0–100) ---- -->
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <label><span>Clínica Médica</span><span>85%</span></label>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <label><span>Cirurgia</span><span>75%</span></label>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <label><span>Diagnóstico por Imagem</span><span>60%</span></label>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="60"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <label><span>Animais Silvestres</span><span>50%</span></label>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="50"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERIA
+  ============================================================ -->
+  <section id="galeria">
+    <div class="section-label">Galeria</div>
+    <h2 class="section-title">Momentos em Prática</h2>
+    <div class="gallery-grid">
+      <!-- ---- Adicione mais cards ou troque os placeholders por <img> ---- -->
+      <div class="gallery-card reveal">
+        <div class="gallery-img">
+          <!-- <img src="clinica.jpg" alt="Clínica de Cães" /> -->
+          <div class="gallery-img-placeholder">
+            <svg viewBox="0 0 48 48" fill="var(--color-muted)" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" opacity=".25"/>
+              <circle cx="24" cy="24" r="9" opacity=".4"/>
+            </svg>
+            <span>Foto 1</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Clínica de Cães</h4>
+          <p>Atendimento clínico — VetVida, 2023</p>
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <div class="gallery-img">
+          <div class="gallery-img-placeholder">
+            <svg viewBox="0 0 48 48" fill="var(--color-muted)" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" opacity=".25"/>
+              <circle cx="24" cy="24" r="9" opacity=".4"/>
+            </svg>
+            <span>Foto 2</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Cirurgia</h4>
+          <p>Estágio cirúrgico — HV UFMG, 2024</p>
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <div class="gallery-img">
+          <div class="gallery-img-placeholder">
+            <svg viewBox="0 0 48 48" fill="var(--color-muted)" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" opacity=".25"/>
+              <circle cx="24" cy="24" r="9" opacity=".4"/>
+            </svg>
+            <span>Foto 3</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Animais Silvestres</h4>
+          <p>Voluntariado — CETAS, 2023</p>
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <div class="gallery-img">
+          <div class="gallery-img-placeholder">
+            <svg viewBox="0 0 48 48" fill="var(--color-muted)" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" opacity=".25"/>
+              <circle cx="24" cy="24" r="9" opacity=".4"/>
+            </svg>
+            <span>Foto 4</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h4>Monitoria</h4>
+          <p>Anatomia veterinária — UFMG, 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ÁREAS DE INTERESSE
+  ============================================================ -->
+  <section id="areas">
+    <div class="section-label">Áreas de Interesse</div>
+    <h2 class="section-title">O que me apaixona</h2>
+    <div class="areas-grid">
+      <!-- ---- Adicione, remova ou edite cards ---- -->
+      <div class="area-card reveal">
+        <div class="area-icon">🩺</div>
+        <h4>Clínica</h4>
+        <p>Diagnóstico e tratamento clínico de cães e gatos</p>
+      </div>
+      <div class="area-card reveal">
+        <div class="area-icon">🔬</div>
+        <h4>Cirurgia</h4>
+        <p>Procedimentos cirúrgicos de tecidos moles e ortopedia</p>
+      </div>
+      <div class="area-card reveal">
+        <div class="area-icon">📡</div>
+        <h4>Diagnóstico</h4>
+        <p>Ultrassonografia, radiologia e exames complementares</p>
+      </div>
+      <div class="area-card reveal">
+        <div class="area-icon">🦜</div>
+        <h4>Silvestres</h4>
+        <p>Reabilitação e manejo de animais silvestres</p>
+      </div>
+      <div class="area-card reveal">
+        <div class="area-icon">💉</div>
+        <h4>Anestesiologia</h4>
+        <p>Protocolos anestésicos e monitoração trans-operatória</p>
+      </div>
+      <div class="area-card reveal">
+        <div class="area-icon">🧪</div>
+        <h4>Patologia</h4>
+        <p>Diagnóstico laboratorial e patologia clínica</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEPOIMENTOS
+  ============================================================ -->
+  <section id="depoimentos">
+    <div class="section-label">Depoimentos</div>
+    <h2 class="section-title">O que dizem sobre mim</h2>
+    <div class="dep-grid">
+      <!-- ---- Edite os depoimentos ---- -->
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-text">
+          "Ana Beatriz demonstrou dedicação exemplar durante o estágio. Proativa, empática com os
+          tutores e extremamente cuidadosa com os pacientes."
+        </p>
+        <div class="dep-author">
+          <div class="dep-avatar">DM</div>
+          <div class="dep-author-info">
+            <strong>Dra. Mariana Costa</strong>
+            <span>Médica Veterinária — VetVida</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-text">
+          "Uma das melhores monitoras que já tive. Paciência e domínio técnico acima da média para
+          o seu período na graduação."
+        </p>
+        <div class="dep-author">
+          <div class="dep-avatar">PR</div>
+          <div class="dep-author-info">
+            <strong>Prof. Ricardo Lima</strong>
+            <span>Anatomia Veterinária — UFMG</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-text">
+          "Comprometida com o bem-estar animal. Sua passagem pelo CETAS foi marcante para toda
+          a equipe de reabilitação."
+        </p>
+        <div class="dep-author">
+          <div class="dep-avatar">FS</div>
+          <div class="dep-author-info">
+            <strong>Fernanda Souza</strong>
+            <span>Coordenadora — CETAS Vitória</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO
+  ============================================================ -->
+  <section id="contato">
+    <div class="section-label">Contato</div>
+    <h2 class="section-title">Fale Comigo</h2>
+    <div class="contato-grid">
+
+      <!-- Informações de contato — edite os valores abaixo -->
+      <div class="contato-info reveal">
+        <div class="contato-item">
+          <div class="contato-item-icon">📧</div>
+          <div>
+            <strong>E-mail</strong>
+            <span>anabeatriz@email.com</span>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon">📱</div>
+          <div>
+            <strong>Telefone / WhatsApp</strong>
+            <span>(27) 99999-9999</span>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon">💼</div>
+          <div>
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/anabeatriz</span>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon">📸</div>
+          <div>
+            <strong>Instagram</strong>
+            <span>@anabeatriz.vet</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de contato -->
+      <div class="reveal">
+        <div class="form-group">
+          <label>Seu nome</label>
+          <input type="text" placeholder="Ex: João Silva" />
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" placeholder="seu@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Assunto</label>
+          <select>
+            <option value="">Selecione...</option>
+            <option>Proposta de Estágio</option>
+            <option>Consultoria</option>
+            <option>Colaboração Acadêmica</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea placeholder="Escreva sua mensagem..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="handleForm(event)">
+          Enviar Mensagem ✉️
+        </button>
+        <p id="form-msg" style="margin-top:12px;color:var(--color-secondary);font-size:.88rem;display:none">
+          ✅ Mensagem enviada! Retornarei em breve.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <span>© 2024 <strong>Ana Beatriz</strong> · Medicina Veterinária</span>
+    <span>Feito com 🐾 e dedicação</span>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // ---- Scroll Reveal ----
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ---- Skill bars animados ao entrar na viewport ----
+    const bars = document.querySelectorAll('.skill-bar-fill');
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.dataset.pct + '%';
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(b => barObserver.observe(b));
+
+    // ---- Active nav link no scroll ----
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current
+          ? 'var(--color-primary)' : '';
+      });
+    }, { passive: true });
+
+    // ---- Formulário (simulado) ----
+    function handleForm(e) {
+      e.preventDefault();
+      const msg = document.getElementById('form-msg');
+      msg.style.display = 'block';
+      setTimeout(() => msg.style.display = 'none', 4000);
+    }
+  </script>
+</body>
+</html>
